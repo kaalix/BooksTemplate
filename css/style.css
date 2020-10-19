@@ -21,7 +21,7 @@ section {
 }
 
 header a {
-    background: #dd2476;
+    /*background: #dd2476;*/
     font-size: 0.9em;
     color: whitesmoke;
 }
@@ -136,7 +136,7 @@ header .container .col-md-7 button {
     z-index: 1;
 }
 
-.section-1 .row .col-md-6 panel h1 {
+.section-1 .row .col-md-6 .panel h1 {
     font-weight: bold;
     padding: 0.4em 0;
     font-size: 2em;
@@ -356,12 +356,16 @@ footer .column i+i {
 
 
 /*Sticky class*/
-
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.1);
-    z-index: 9999;
+    background: #000;
+    color: #fff;
+    z-index: 100000;
     transition: all 1.5s ease;
+}
+.sticky a:hover
+{
+    color: #fff;
 }

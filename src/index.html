@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg ">
+            <nav class="navbar navbar-expand-lg" id="header">
                 <a class="navbar-brand" href="#"> <i class="fas fa-book-reader fa-3x mx-3"></i> Books
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -365,7 +365,15 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
 
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("#header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+    </script>
 </body>
 
 

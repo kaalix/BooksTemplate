@@ -1,15 +1,16 @@
 /**Sticky navbar */
 
-let navbar = $(".navbar");
+/*let navbar = $(".navbar");*/
+// let navbar = $("#header");
 
-$(window).scroll(function() {
-    let oTop = $(".cover").offset().top - window.innerHeight;
-    if ($(window).scrollTop() > oTop) {
-        navbar.addClass("sticky");
-    } else {
-        navbar.removeClass("sticky");
-    }
-});
+// $(window).scroll(function() {
+//     let oTop = $(".section-2").offset().top - window.innerHeight;
+//     if ($(window).scrollTop() > oTop) {
+//         navbar.addClass("sticky");
+//     } else {
+//         navbar.removeClass("sticky");
+//     }
+// });
 
 /**Counter animation */
 let nCount = function(selector) {
